@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BOC_App</string>
+    <string name="registration">REGISTRATION</string>
+    <string name="contactus">Contact Us</string>
+    <string name="nearest_atm_location">Nearest ATM Location</string>
+    <string name="contact_us_massage">Message</string>
+    <string name="contact_us_location">Location</string>
+    <string name="register" />
+
+    <string-array name="Accounts">
+        <item>My Salary Savings </item>
+        <item>Power Bonus Savings</item>
+        <item>DFHK Current Account </item>
+    </string-array>
+
+</resources>

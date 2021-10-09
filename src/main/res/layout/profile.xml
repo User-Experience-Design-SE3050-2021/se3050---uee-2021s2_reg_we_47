@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        tools:context=".ProfileActivity">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.959"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.031"
+            app:srcCompat="@drawable/profile" />
+
+        <ImageView
+            android:id="@+id/back_home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.029"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.075"
+            app:srcCompat="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="515dp"
+            android:layout_height="747dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="vertical"
+            android:overScrollMode="ifContentScrolls"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="236dp"
+                android:layout_height="184dp"
+                android:layout_marginLeft="130dp"
+                app:srcCompat="@drawable/profile2" />
+
+            <TextView
+                android:id="@+id/user_textView"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:text="Profile"
+                android:textAlignment="center"
+                android:textColor="#1A3F7D"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_margin="54dp"
+                android:layout_marginEnd="25dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                app:cardCornerRadius="40dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_card"
+                    android:paddingLeft="28dp"
+                    android:paddingBottom="25dp">
+
+                    <TextView
+                        android:id="@+id/proName_textView"
+                        android:layout_width="397dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Name : Jananjali Wickramasinghe "
+                        android:textAlignment="center"
+                        android:textColor="#1A3F7D"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/proUName_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Username : "
+                        android:textAlignment="center"
+                        android:textColor="#1A3F7D"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/proName_textView" />
+
+                    <TextView
+                        android:id="@+id/proEmail_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Email : "
+                        android:textAlignment="center"
+                        android:textColor="#1A3F7D"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/proUName_textView" />
+
+                    <TextView
+                        android:id="@+id/proContact_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Contact : "
+                        android:textAlignment="center"
+                        android:textColor="#1A3F7D"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/proEmail_textView" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/changePassword"
+                android:layout_width="400dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="40dp"
+                app:srcCompat="@drawable/picture9" />
+
+            <ImageView
+                android:id="@+id/logOutButton"
+                android:layout_width="400dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="40dp"
+                app:srcCompat="@drawable/picture12" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

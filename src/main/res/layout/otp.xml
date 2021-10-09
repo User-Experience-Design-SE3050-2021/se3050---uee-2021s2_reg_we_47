@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        tools:context=".OtpActivity">
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="398dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/buttonshape"
+            android:backgroundTint="#FFC107"
+            android:text="Confirm"
+            android:textColor="#1A3F7D"
+            android:textColorHint="#FF9800"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/otpCancleButton"
+            android:layout_width="397dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cancelbtn"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#1A3F7D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmButton"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.959"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.031"
+            app:srcCompat="@drawable/profile" />
+
+        <ImageView
+            android:id="@+id/back_home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.029"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.078"
+            app:srcCompat="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="413dp"
+            android:layout_height="201dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="vertical"
+            android:overScrollMode="ifContentScrolls"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10">
+
+            <TextView
+                android:id="@+id/otp_textView"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Enter One Time Password"
+                android:textAlignment="center"
+                android:textColor="#1A3F7D"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/otpTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:text="*Enter 4 digit pin."
+                android:textColor="#1A3F7D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="398dp"
+                android:layout_height="58dp"
+                android:ems="10"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
