@@ -37,7 +37,7 @@
             android:layout_width="397dp"
             android:layout_height="36dp"
             android:layout_marginTop="15dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/cancelbtn"
             android:text="Cancel"
             android:textAllCaps="false"
@@ -52,7 +52,7 @@
             app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
-            android:id="@+id/profile"
+            android:id="@+id/OWprofile"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_marginTop="2dp"
@@ -66,7 +66,7 @@
             app:srcCompat="@drawable/profile" />
 
         <ImageView
-            android:id="@+id/back_home"
+            android:id="@+id/OWback_home"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="2dp"
@@ -93,8 +93,8 @@
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="412dp"
-            android:layout_height="382dp"
+            android:layout_width="425dp"
+            android:layout_height="624dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="5dp"
@@ -132,8 +132,10 @@
                 android:id="@+id/spinnerFA"
                 android:layout_width="395dp"
                 android:layout_height="36dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
                 android:layout_marginEnd="10dp"
-                />
+                android:layout_marginBottom="10dp" />
 
             <TextView
                 android:id="@+id/ToaccTextView"
@@ -145,12 +147,14 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/newPasswordEditTextTextPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPassword" />
+            <Spinner
+                android:id="@+id/spinnerTA"
+                android:layout_width="395dp"
+                android:layout_height="36dp"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
 
             <TextView
                 android:id="@+id/AmountTextView"
@@ -163,11 +167,72 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/Amount"
+                android:id="@+id/amount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Transfer Date"
+                android:textColor="#1A3F7D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/datepic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="dd/mm/yyyy"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/Trstype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Transfer Type"
+                android:textColor="#1A3F7D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerTT"
+                android:layout_width="395dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/Trsdes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Transfer Description"
+                android:textColor="#1A3F7D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type here"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

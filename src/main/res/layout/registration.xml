@@ -94,8 +94,8 @@
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="411dp"
-            android:layout_height="443dp"
+            android:layout_width="409dp"
+            android:layout_height="460dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="5dp"
@@ -205,7 +205,8 @@
                 android:layout_width="411dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:textSize="18sp" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
