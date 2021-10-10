@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class DashboardActivity extends AppCompatActivity {
 
-    private ImageView OwnAccTrans;
+    private ImageView OwnAccTrans,Profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,15 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),OwnAccTransActivity.class);
+                startActivity(intent);
+            }
+        });
+        //Navigate to profile
+        Profile = (ImageView) findViewById(R.id.profile);
+        Profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),ProfileActivity.class);
                 startActivity(intent);
             }
         });
