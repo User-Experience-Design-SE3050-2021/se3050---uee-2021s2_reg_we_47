@@ -23,7 +23,7 @@ tools:context=".ContactUsMessageActivity">
         app:srcCompat="@drawable/profile" />
 
     <ImageView
-        android:id="@+id/back_home"
+        android:id="@+id/home"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="2dp"
@@ -36,22 +36,22 @@ tools:context=".ContactUsMessageActivity">
         app:layout_constraintVertical_bias="0.029"
         app:srcCompat="@drawable/home" />
 
-<ImageView
-    android:id="@+id/imageView10"
-    android:layout_width="110dp"
-    android:layout_height="60dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.498"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.078"
-    app:srcCompat="@drawable/logo" />
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059"
+        app:srcCompat="@drawable/logo" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="387dp"
-        android:layout_height="332dp"
+        android:layout_width="388dp"
+        android:layout_height="317dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         android:background="#FFFFFF"
@@ -59,14 +59,15 @@ tools:context=".ContactUsMessageActivity">
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView10"
-        app:layout_constraintVertical_bias="0.4">
+        app:layout_constraintVertical_bias="0.512">
 
         <TextView
-            android:id="@+id/user_textView"
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:text="@string/contact_us_massage"
             android:textAlignment="center"
             android:textColor="#1A3F7D"
@@ -74,7 +75,7 @@ tools:context=".ContactUsMessageActivity">
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/UNameTextView"
+            android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Username"
@@ -83,7 +84,7 @@ tools:context=".ContactUsMessageActivity">
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/UNameinputText"
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -92,7 +93,7 @@ tools:context=".ContactUsMessageActivity">
             android:textColorLink="#1A3F7D" />
 
         <TextView
-            android:id="@+id/PasswordTextView"
+            android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="e - Mail"
@@ -101,14 +102,14 @@ tools:context=".ContactUsMessageActivity">
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress2"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textEmailAddress" />
 
         <TextView
-            android:id="@+id/ConfirmPasswordTextView"
+            android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Message"
@@ -117,7 +118,7 @@ tools:context=".ContactUsMessageActivity">
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/messagecon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -125,7 +126,7 @@ tools:context=".ContactUsMessageActivity">
             android:inputType="textMultiLine" />
 
         <TextView
-            android:id="@+id/EmailtextView"
+            android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Date"
@@ -134,7 +135,7 @@ tools:context=".ContactUsMessageActivity">
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextDate"
+            android:id="@+id/datecon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -143,7 +144,7 @@ tools:context=".ContactUsMessageActivity">
     </LinearLayout>
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/sendcon"
         android:layout_width="388dp"
         android:layout_height="29dp"
         android:background="@drawable/buttonshape"
@@ -162,7 +163,7 @@ tools:context=".ContactUsMessageActivity">
         app:layout_constraintVertical_bias="0.153" />
 
     <Button
-        android:id="@+id/CancleButton"
+        android:id="@+id/rechargecreditback"
         android:layout_width="389dp"
         android:layout_height="31dp"
         android:background="@drawable/cancelbtn"
@@ -175,7 +176,50 @@ tools:context=".ContactUsMessageActivity">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintTop_toBottomOf="@+id/sendcon"
         app:layout_constraintVertical_bias="0.405" />
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/bttn_2" />
+
+    <ImageView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/call"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/btt_3" />
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/message"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/bttn_4" />
+
+    <ImageView
+        android:id="@+id/atm"
+        android:layout_width="383dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        app:layout_constraintVertical_bias="0.833"
+        app:srcCompat="@drawable/bttn_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

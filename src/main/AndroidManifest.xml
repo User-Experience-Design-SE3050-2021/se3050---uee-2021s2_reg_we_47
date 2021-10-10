@@ -10,39 +10,42 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Otp3Activity"
+            android:name=".TransactionHistoryActivity"
             android:exported="true" />
         <activity
-            android:name=".ChangePassword2Activity"
+            android:name=".BillPaymentFormActivity"
             android:exported="true" />
         <activity
-            android:name=".Otp2Activity"
+            android:name=".BillPaymentHomeActivity"
             android:exported="true" />
-        <activity
-            android:name=".OwnAccTransActivity"
-            android:exported="true" />
-        <activity
-            android:name=".OtpActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ChangePasswordActivity"
-            android:exported="true" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".ContactUsLocationActivity" />
+        <activity android:name=".AddNewBillerActivity" />
+        <activity android:name=".ThirdPartyTransactions" />
+        <activity android:name=".confirm_transfer_details" />
+        <activity android:name=".one_time_transfer" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".registered_benefic_transfer" />
+        <activity android:name=".editBudget" />
+        <activity android:name=".budget_calculator" />
+        <activity android:name=".ContactUsCallActivity" />
+        <activity android:name=".AddAccountActivity" />
+        <activity android:name=".AddCreditCardActivity" />
         <activity android:name=".ContactUsNearestAtmActivity" />
         <activity android:name=".ContactUsMessageActivity" />
+        <activity android:name=".ContactUsLocationActivity" />
+        <activity android:name=".RechargeCreditCardActivity" />
+        <activity android:name=".ChangePassword2Activity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".OwnAccTransActivity" />
+        <activity android:name=".Otp3Activity" />
+        <activity android:name=".Otp2Activity" />
+        <activity android:name=".OtpActivity" />
+        <activity android:name=".AccountsActivity" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".CreditCardPaymentsActivity"
             android:exported="true" />
-        <activity
-            android:name=".DashboardActivity"
-            android:exported="true" />
-        <activity
-            android:name=".RegistrationActivity"
-            android:exported="true" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true">
+        <activity android:name=".DashboardActivity"/>
+            <activity android:name=".LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

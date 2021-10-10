@@ -23,7 +23,7 @@ tools:context=".ContactUsLocationActivity">
         app:srcCompat="@drawable/profile" />
 
     <ImageView
-        android:id="@+id/back_home"
+        android:id="@+id/home"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="2dp"
@@ -36,17 +36,17 @@ tools:context=".ContactUsLocationActivity">
         app:layout_constraintVertical_bias="0.029"
         app:srcCompat="@drawable/home" />
 
-<ImageView
-    android:id="@+id/imageView10"
-    android:layout_width="110dp"
-    android:layout_height="60dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.498"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.078"
-    app:srcCompat="@drawable/logo" />
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView"
@@ -62,15 +62,47 @@ tools:context=".ContactUsLocationActivity">
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView"
-        android:layout_width="370dp"
-        android:layout_height="383dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+    <ImageView
+        android:id="@+id/transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.466" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/bttn_2" />
+
+    <ImageView
+        android:id="@+id/cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/transaction"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/btt_3" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/cal"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/bttn_4" />
+
+    <ImageView
+        android:id="@+id/contactus"
+        android:layout_width="385dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cal"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bttn_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

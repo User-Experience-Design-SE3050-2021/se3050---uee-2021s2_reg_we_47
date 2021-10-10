@@ -7,24 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class ContactUsLocationActivity extends AppCompatActivity {
+public class ContactUsCallActivity extends AppCompatActivity {
 
-    ImageView call, message, location, atm, home;
+    ImageView call, message, loc, atm, home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.contact_us_location);
+        setContentView(R.layout.contact_us_call);
 
         call = findViewById(R.id.call);
         message = findViewById(R.id.message);
-        location = findViewById(R.id.location);
+        loc = findViewById(R.id.location);
         atm = findViewById(R.id.atm);
         home = findViewById(R.id.home);
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ContactUsLocationActivity.this, DashboardActivity.class);
+                Intent intent = new Intent(ContactUsCallActivity.this, DashboardActivity.class);
                 //String Vemaill  = verify;
                 //intent.putExtra("Verify", Vemaill );
                 startActivity(intent);
@@ -33,7 +33,7 @@ public class ContactUsLocationActivity extends AppCompatActivity {
         call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ContactUsLocationActivity.this, ContactUsCallActivity.class);
+                Intent intent = new Intent(ContactUsCallActivity.this, ContactUsCallActivity.class);
                 //String Vemaill  = verify;
                 //intent.putExtra("Verify", Vemaill );
                 startActivity(intent);
@@ -42,16 +42,16 @@ public class ContactUsLocationActivity extends AppCompatActivity {
         message.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ContactUsLocationActivity.this, ContactUsMessageActivity.class);
+                Intent intent = new Intent(ContactUsCallActivity.this, ContactUsMessageActivity.class);
                 //String Vemaill  = verify;
                 //intent.putExtra("Verify", Vemaill );
                 startActivity(intent);
             }
         });
-        location.setOnClickListener(new View.OnClickListener() {
+        loc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ContactUsLocationActivity.this, ContactUsLocationActivity.class);
+                Intent intent = new Intent(ContactUsCallActivity.this, ContactUsLocationActivity.class);
                 //String Vemaill  = verify;
                 //intent.putExtra("Verify", Vemaill );
                 startActivity(intent);
@@ -60,7 +60,7 @@ public class ContactUsLocationActivity extends AppCompatActivity {
         atm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ContactUsLocationActivity.this, ContactUsNearestAtmActivity.class);
+                Intent intent = new Intent(ContactUsCallActivity.this, ContactUsNearestAtmActivity.class);
                 //String Vemaill  = verify;
                 //intent.putExtra("Verify", Vemaill );
                 startActivity(intent);
