@@ -63,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
         forgotps.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this,ChangePasswordActivity.class);
+                Intent intent = new Intent(LoginActivity.this,ChangePassword2Activity.class);
                 startActivity(intent);
             }
         });

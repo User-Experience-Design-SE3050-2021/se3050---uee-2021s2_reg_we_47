@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Otp3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ChangePassword2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Otp2Activity"
+            android:exported="true" />
+        <activity
             android:name=".OwnAccTransActivity"
             android:exported="true" />
         <activity

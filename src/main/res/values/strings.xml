@@ -8,9 +8,17 @@
     <string name="register" />
 
     <string-array name="Accounts">
+        <item>Choose Account </item>
         <item>My Salary Savings </item>
-        <item>Power Bonus Savings</item>
-        <item>DFHK Current Account </item>
+        <item>Power Bonus Savings </item>
+    </string-array>
+
+    <string-array name="TransferTypes">
+        <item>Pay Now </item>
+        <item>Pay On Date </item>
+        <item>Pay Weekly </item>
+        <item>Pay Monthly </item>
+        <item>Pay Annually </item>
     </string-array>
 
 </resources>

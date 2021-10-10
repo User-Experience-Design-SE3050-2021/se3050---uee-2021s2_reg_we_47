@@ -13,10 +13,10 @@
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:backgroundTint="#FFFFFF"
-        tools:context=".OtpActivity">
+        tools:context=".Otp3Activity">
 
         <Button
-            android:id="@+id/confirmButton1"
+            android:id="@+id/confirmButton3"
             android:layout_width="398dp"
             android:layout_height="35dp"
             android:layout_marginTop="12dp"
@@ -33,7 +33,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
         <Button
-            android:id="@+id/otpCancleButton"
+            android:id="@+id/otp3CancleButton"
             android:layout_width="397dp"
             android:layout_height="36dp"
             android:layout_marginTop="15dp"
@@ -48,7 +48,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.571"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/confirmButton1"
+            app:layout_constraintTop_toBottomOf="@+id/confirmButton3"
             app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
