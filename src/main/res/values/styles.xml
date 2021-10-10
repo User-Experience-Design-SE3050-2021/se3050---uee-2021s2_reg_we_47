@@ -1,10 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+
+    <style name="cancel_button">
+        <item name="android:layout_width">359dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/btn_cancel</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#1A3F7D</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="style_btn">
+        <item name="android:background">@drawable/btn_shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:minWidth">90dp</item>
     </style>
 
 </resources>

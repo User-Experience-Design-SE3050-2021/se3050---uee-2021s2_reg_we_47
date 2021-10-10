@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.boc_app">
+    package="com.example.bocmobileapp">
 
     <application
         android:allowBackup="true"
@@ -8,40 +8,33 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.BOCMobileApp">
         <activity
-            android:name=".Otp3Activity"
+            android:name=".manage_beneficiary"
             android:exported="true" />
         <activity
-            android:name=".ChangePassword2Activity"
+            android:name=".editBudget"
             android:exported="true" />
         <activity
-            android:name=".Otp2Activity"
+            android:name=".dashboard"
             android:exported="true" />
         <activity
-            android:name=".OwnAccTransActivity"
+            android:name=".budget_calculator"
             android:exported="true" />
         <activity
-            android:name=".OtpActivity"
+            android:name=".confirm_transfer_details"
             android:exported="true" />
         <activity
-            android:name=".ChangePasswordActivity"
-            android:exported="true" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".ContactUsLocationActivity" />
-        <activity android:name=".ContactUsNearestAtmActivity" />
-        <activity android:name=".ContactUsMessageActivity" />
-        <activity
-            android:name=".ProfileActivity"
+            android:name=".registered_benefic_transfer"
             android:exported="true" />
         <activity
-            android:name=".DashboardActivity"
+            android:name=".one_time_transfer"
             android:exported="true" />
         <activity
-            android:name=".RegistrationActivity"
+            android:name=".ThirdPartyTransactions"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
