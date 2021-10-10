@@ -5,14 +5,58 @@
     <string name="nearest_atm_location">Nearest ATM Location</string>
     <string name="contact_us_massage">Message</string>
     <string name="contact_us_location">Location</string>
-    <string name="register" />
+    <string name="add_credit_card">Add Credit Card</string>
+    <string name="add_account">Add Account</string>
+    <string name="recharge_credit_carde">Recharge_Credit_card</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_new_biller">Add New Biller</string>
+    <string name="accounts">Accounts</string>
+    <string name="credit_card_payment">Credit Card Payment</string>
+    <string name="transaction_history">Transaction History</string>
 
+
+    <string name="operations">Operations</string>
+
+
+    <string name="next">Next</string>
+    <string name="payNow">Pay Now</string>
+
+
+    <string name="thirdParty">Third Party Transfers</string>
+    <string name="thirdParty_opt_1">One Time Transfer</string>
+    <string name="thirdParty_opt_2">Transfer to registered beneficiary</string>
+    <string name="thirdParty_opt_3">Manage favorite beneficiary</string>
+    <string name="thirdParty_opt_1_desc">Transfer funds to un-registered accounts</string>
+    <string name="thirdParty_opt_2_desc">Transfer funds to registered accounts</string>
+    <string name="thirdParty_opt_3_desc">View, register or remove favorite beneficiary</string>
+
+    <string name="fromAccount">From Account</string>
+    <string name="BeneficiaryName">Beneficiary Name</string>
+    <string name="BeneficiaryAccountNumber">Beneficiary Account Number</string>
+    <string name="Bank">Bank</string>
+    <string name="Branch">Branch</string>
+    <string name="TransferAmount">Transfer Amount</string>
+    <string name="TransferDate">Transfer Date</string>
+    <string name="TransferDescription">Transfer Description</string>
+
+    <string name="SelectBeneficiaryName">Select Beneficiary Nick-name</string>
+
+    <string-array name="account_list">
+        <item>savings account 1</item>
+        <item>savings account 2</item>
+        <item>current account 1</item>
+    </string-array>
+
+    <string-array name="beneficiary_list">
+        <item>beneficiary 1</item>
+        <item>beneficiary 2</item>
+        <item>beneficiary 3</item>
+    </string-array>
     <string-array name="Accounts">
         <item>Choose Account </item>
         <item>My Salary Savings </item>
         <item>Power Bonus Savings </item>
     </string-array>
-
     <string-array name="TransferTypes">
         <item>Pay Now </item>
         <item>Pay On Date </item>
@@ -20,5 +64,13 @@
         <item>Pay Monthly </item>
         <item>Pay Annually </item>
     </string-array>
+
+    <string name="ConfirmTransfer">Confirm Transfer details</string>
+
+    <string name="Budget">Budget Calculator</string>
+    <string name="spent">Spent</string>
+    <string name="earned">Earned</string>
+    <string name="title_activity_edit_budget">edit_budget</string>
+    <string name="large_text"></string>
 
 </resources>
